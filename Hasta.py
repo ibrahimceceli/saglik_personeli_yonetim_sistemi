@@ -51,7 +51,7 @@ class Hasta():
     #Tedavi süresini hesaplayan metot
     def tedavi_suresi_hesapla(self):
         tedavi_suresi = 50 
-        return "   Tahmini tedavi süresi: {} gün".format(tedavi_suresi)
+        return "Tahmini tedavi süresi: {} gün".format(tedavi_suresi)
 
     #Str metoduyla hasta bilgilerini yazdırıyoruz
     def __str__(self):
@@ -69,4 +69,7 @@ class Hasta():
 hasta1 = Hasta("HST1", "Emre", "Güneş", "06.03.1987", "Böbrek taşı", "Ağrı kesici ilaç", "Ahmet Yılmaz", "Selin Kozak")
 hasta2 = Hasta("HST2", "Salih", "Koca", "13.01.2000", "Egzama", "Nemlendirici İlaç", "Mehmet Şahin", "Zeynep Akça")
 hasta3 = Hasta("HST3", "Cemre", "Tokat", "22.11.1995", "Kızamık", "Destekleyici Bakım", "Cenk Güçlü", "İrem Kabak")
-#print(hasta1.tedavi_suresi_hesapla())
+'''print(hasta1)
+print(hasta2)
+print(hasta3)
+print("HST1 {}".format(hasta1.tedavi_suresi_hesapla()))'''

@@ -79,4 +79,9 @@ class Hemsire(Personel):
 hemsire1 = Hemsire("HMS1", "Selin", "Kozak", "Yenidoğan Hemşireliği", 40000, 45, "Yenidoğan Yoğun Bakım Hemşireliği", "İzmir Seyfi Demirsoy Eğitim ve Araştırma Hastanesi")
 hemsire2 = Hemsire("HMS2", "Zeynep", "Akça", "Ortopedi Hemşireliği", 43000, 49, "Hastane Afet ve Acil Durum Planlaması Eğiticisi", "İzmir Tınaztepe Hastanesi")
 hemsire3 = Hemsire("HMS3", "İrem", "Kabak", "Yoğun Bakım Hemşireliği", 38000, 47, "Enfeksiyon Kontrol Hemşireliği", "İzmir Bozyaka Eğitim ve Araştırma Hastanesi")
-#print(hemsire1.maas_arttir())
+'''print(hemsire1)
+print(hemsire2)
+print(hemsire3)
+print("HMS1 {}".format(hemsire1.maas_arttir()))
+print("HMS2 {}".format(hemsire2.maas_arttir()))
+print("HMS3 {}".format(hemsire3.maas_arttir()))'''

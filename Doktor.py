@@ -61,7 +61,7 @@ class Doktor(Personel):
     def maas_arttir(self):
         oran = 50
         self.maas += self.maas*(oran/100)
-        return "   Yeni Maaş: {}".format(self.maas)
+        return "Yeni Maaş: {}".format(self.maas)
 
     #Str metoduyla doktor bilgilerini yazdırıyoruz
     def __str__(self):
@@ -79,5 +79,10 @@ class Doktor(Personel):
 doktor1 = Doktor("DR1", "Ahmet", "Yılmaz", "İç Hastalıkları", 110000, "Nefroloji", 14, "İzmir Seyfi Demirsoy Eğitim ve Araştırma Hastanesi")
 doktor2 = Doktor("DR2", "Mehmet", "Şahin", "Ortopedi ve Travmatoloji", 100000, "El Cerrahisi", 23, "İzmir Tınaztepe Hastanesi")
 doktor3 = Doktor("DR3", "Cenk", "Güçlü", "Göğüs Hastalıkları", 95000, "Alerjik Göğüs Hastalıkları", 19, "İzmir Bozyaka Eğitim ve Araştırma Hastanesi")
-#print(doktor1.maas_arttir())
+'''print(doktor1)
+print(doktor2)
+print(doktor3)
+print("DR1 {}".format(doktor1.maas_arttir()))
+print("DR2 {}".format(doktor2.maas_arttir()))
+print("DR3 {}".format(doktor3.maas_arttir()))'''
 

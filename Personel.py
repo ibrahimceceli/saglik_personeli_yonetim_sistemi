@@ -50,6 +50,8 @@ class Personel():
 #Oluşturulan 2 adet personel nesnesi
 personel1 = Personel("PRS1", "Ferhat", "Kara", "İş Sağlığı ve Güvenliği", 30000)
 personel2 = Personel("PRS2", "Kemal", "Tok", "Hasta Kabul ve Kayıt", 35000)
+#print(personel1)
+#print(personel2)
 
 
 
