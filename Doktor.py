@@ -1,12 +1,14 @@
 from Personel import Personel
 
 class Doktor(Personel):
+    #Initializer metot
     def __init__(self, personel_no, ad, soyad, departman, maas, uzmanlik, deneyim_yili, hastane):
         super().__init__(personel_no, ad, soyad, departman, maas)        
         self.uzmanlik = uzmanlik
         self.deneyim_yili = deneyim_yili
         self.hastane = hastane
 
+    #Get-set metotları
     def get_personel_no(self):
         return self.personel_no
     
@@ -55,11 +57,13 @@ class Doktor(Personel):
     def set_hastane(self, yeni_hastane):
         self.hastane = yeni_hastane
 
+    #Maaş arttırma metodu 
     def maas_arttir(self):
         oran = 50
         self.maas += self.maas*(oran/100)
         return "   Yeni Maaş: {}".format(self.maas)
 
+    #Str metoduyla doktor bilgilerini yazdırıyoruz
     def __str__(self):
         return "Doktor Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {}\n   Uzmanlik: {}\n   Deneyim Yili: {}\n   Hastane: {}\n".format(
             self.personel_no,
@@ -70,9 +74,10 @@ class Doktor(Personel):
             self.uzmanlik,
             self.deneyim_yili,
             self.hastane)
-    
-doktor1 = Doktor("DR1", "Ahmet", "Yılmaz", "İç Hastalıkları", 60000, "Nefroloji", 14, "İzmir Seyfi Demirsoy Eğitim ve Araştırma Hastanesi")
-doktor2 = Doktor("DR2", "Mehmet", "Şahin", "Ortopedi ve Travmatoloji", 80000, "El Cerrahisi", 23, "İzmir Tınaztepe Hastanesi")
-doktor3 = Doktor("DR3", "Cenk", "Güçlü", "Göğüs Hastalıkları", 90000, "Alerjik Göğüs Hastalıkları", 19, "İzmir Bozyaka Eğitim ve Araştırma Hastanesi")
+
+#Oluşturulan 3 adet doktor nesnesi
+doktor1 = Doktor("DR1", "Ahmet", "Yılmaz", "İç Hastalıkları", 110000, "Nefroloji", 14, "İzmir Seyfi Demirsoy Eğitim ve Araştırma Hastanesi")
+doktor2 = Doktor("DR2", "Mehmet", "Şahin", "Ortopedi ve Travmatoloji", 100000, "El Cerrahisi", 23, "İzmir Tınaztepe Hastanesi")
+doktor3 = Doktor("DR3", "Cenk", "Güçlü", "Göğüs Hastalıkları", 95000, "Alerjik Göğüs Hastalıkları", 19, "İzmir Bozyaka Eğitim ve Araştırma Hastanesi")
 #print(doktor1.maas_arttir())
 
