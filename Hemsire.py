@@ -61,7 +61,7 @@ class Hemsire(Personel):
         return "Yeni Maaş: {}".format(self.maas)
 
     def __str__(self):
-        return "Hemsire Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {}\n   Calisma Saati: {}\n   Sertifika: {}\n   Hastane: {}".format(
+        return "Hemsire Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {} TL\n   Calisma Saati: {} saat\n   Sertifika: {}\n   Hastane: {}\n".format(
             self.personel_no,
             self.ad,
             self.soyad,
@@ -71,6 +71,7 @@ class Hemsire(Personel):
             self.sertifika,
             self.hastane)
     
-hemsire1 = Hemsire("no", "ad", "soyad", "departman", 10000, "saat", "sertifika", "hastane")
-print(hemsire1)
-print(hemsire1.maas_arttir())
+hemsire1 = Hemsire("HMS1", "Selin", "Kozak", "Yenidoğan Hemşireliği", 40000, 45, "Yenidoğan Yoğun Bakım Hemşireliği", "İzmir Seyfi Demirsoy Eğitim ve Araştırma Hastanesi")
+hemsire2 = Hemsire("HMS2", "Zeynep", "Akça", "Ortopedi Hemşireliği", 43000, 49, "Hastane Afet ve Acil Durum Planlaması Eğiticisi", "İzmir Tınaztepe Hastanesi")
+hemsire3 = Hemsire("HMS3", "İrem", "Kabak", "Yoğun Bakım Hemşireliği", 38000, 47, "Enfeksiyon Kontrol Hemşireliği", "İzmir Bozyaka Eğitim ve Araştırma Hastanesi")
+#print(hemsire1.maas_arttir())

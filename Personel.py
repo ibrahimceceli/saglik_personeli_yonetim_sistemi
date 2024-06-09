@@ -37,17 +37,16 @@ class Personel():
         self.maas = yeni_maas
 
     def __str__(self):
-        return "Personel Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {}".format(
+        return "Personel Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {}\n".format(
             self.personel_no,
             self.ad,
             self.soyad,
             self.departman,
             self.maas)
 
-personel1 = Personel("no", "ad", "soyad", "departman", "maas")
-personel2 = Personel("no", "ad", "soyad", "departman", "maas")
-print(personel1)
-print(personel2)
+personel1 = Personel("PRS1", "Ferhat", "Kara", "İş Sağlığı ve Güvenliği", 30000)
+personel2 = Personel("PRS2", "Kemal", "Tok", "Hasta Kabul ve Kayıt", 35000)
+
 
 
 

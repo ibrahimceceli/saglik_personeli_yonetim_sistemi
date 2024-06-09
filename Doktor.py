@@ -56,12 +56,12 @@ class Doktor(Personel):
         self.hastane = yeni_hastane
 
     def maas_arttir(self):
-        yuzde = 10
-        self.maas = self.maas + self.maas/yuzde
-        return "Yeni Maaş: {}".format(self.maas)
+        oran = 50
+        self.maas += self.maas*(oran/100)
+        return "   Yeni Maaş: {}".format(self.maas)
 
     def __str__(self):
-        return "Doktor Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {}\n   Uzmanlik: {}\n   Deneyim Yili: {}\n   Hastane: {}".format(
+        return "Doktor Bilgileri:\n   Personel No: {}\n   Ad: {}\n   Soyad: {}\n   Departman: {}\n   Maas: {}\n   Uzmanlik: {}\n   Deneyim Yili: {}\n   Hastane: {}\n".format(
             self.personel_no,
             self.ad,
             self.soyad,
@@ -71,11 +71,8 @@ class Doktor(Personel):
             self.deneyim_yili,
             self.hastane)
     
-doktor1 = Doktor("no", "ad", "soyad", "departman", 10000, "uzmanlik", "yil", "hastane")
-#doktor2 = Doktor("no", "ad", "soyad", "departman", "maas", "uzmanlik", "yil", "hastane")
-#doktor3 = Doktor("no", "ad", "soyad", "departman", "maas", "uzmanlik", "yil", "hastane")
-print(doktor1)
-#print(doktor2)
-#print(doktor3)
-print(doktor1.maas_arttir())
+doktor1 = Doktor("DR1", "Ahmet", "Yılmaz", "İç Hastalıkları", 60000, "Nefroloji", 14, "İzmir Seyfi Demirsoy Eğitim ve Araştırma Hastanesi")
+doktor2 = Doktor("DR2", "Mehmet", "Şahin", "Ortopedi ve Travmatoloji", 80000, "El Cerrahisi", 23, "İzmir Tınaztepe Hastanesi")
+doktor3 = Doktor("DR3", "Cenk", "Güçlü", "Göğüs Hastalıkları", 90000, "Alerjik Göğüs Hastalıkları", 19, "İzmir Bozyaka Eğitim ve Araştırma Hastanesi")
+#print(doktor1.maas_arttir())
 

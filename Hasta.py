@@ -46,10 +46,10 @@ class Hasta():
 
     def tedavi_suresi_hesapla(self):
         tedavi_suresi = 50 
-        return "Tahmini tedavi süresi: {} gün".format(tedavi_suresi)
+        return "   Tahmini tedavi süresi: {} gün".format(tedavi_suresi)
 
     def __str__(self):
-        return "Hasta Bilgileri:\n   Hasta No: {}\n   Ad: {}\n   Soyad: {}\n   Dogum Tarihi: {}\n   Hastalik: {}\n   Tedavi: {}".format(
+        return "Hasta Bilgileri:\n   Hasta No: {}\n   Ad: {}\n   Soyad: {}\n   Dogum Tarihi: {}\n   Hastalik: {}\n   Tedavi: {}\n".format(
             self.hasta_no,
             self.ad,
             self.soyad,
@@ -57,10 +57,7 @@ class Hasta():
             self.hastalik,
             self.tedavi)
     
-hasta1 = Hasta("no", "ad", "soyad", "dogumtarihi", "hastalik", "tedavi")
-#hasta2 = Hasta("no", "ad", "soyad", "dogumtarihi", "hastalik", "tedavi")
-#hasta3 = Hasta("no", "ad", "soyad", "dogumtarihi", "hastalik", "tedavi")
-print(hasta1)
-#print(hasta2)
-#print(hasta3)
-print(hasta1.tedavi_suresi_hesapla())
+hasta1 = Hasta("HST1", "Emre", "Güneş", "06.03.1987", "Böbrek taşı", "Ağrı kesici ilaç")
+hasta2 = Hasta("HST2", "Salih", "Koca", "13.01.2000", "Egzama", "Nemlendirici İlaç")
+hasta3 = Hasta("HST3", "Cemre", "Tokat", "22.11.1995", "Kızamık", "Destekleyici Bakım")
+#print(hasta1.tedavi_suresi_hesapla())
